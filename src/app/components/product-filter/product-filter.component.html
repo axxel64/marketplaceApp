@@ -1,0 +1,19 @@
+<form [formGroup]="filterForm" (ngSubmit)="onSubmit()" class="bg-white rounded-2xl shadow-2xl p-6 flex flex-col gap-2" >
+    <div class="category-section">
+      <h3 class="font-montserrat font-bold text-gray-700" >Categories</h3>
+      <div *ngFor="let category of categories">
+        <input type="checkbox" [formControlName]="category" />
+        <label class="font-montserrat" >{{ category }}</label>
+      </div>
+    </div>
+  
+    <div class="price-range-section">
+      <h3 class="font-montserrat font-bold text-gray-700 " >Price Range</h3>
+      <div *ngFor="let range of priceRanges">
+        <input type="checkbox" [formControlName]="range" />
+        <label class="font-montserrat" >{{ range }}</label>
+      </div>
+    </div>
+  
+    <button type="submit" class=" w-auto rounded-2xl p-1 text-white bg-funko-blue hover:border hover:border-funko-blue hover:bg-white hover:text-funko-blue transition-all ease-in-out duration-300 " >Apply Filters</button>
+  </form>

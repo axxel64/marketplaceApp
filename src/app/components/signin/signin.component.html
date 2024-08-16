@@ -1,0 +1,39 @@
+<div class="relative w-full h-screen bg-funko-logo bg-funko-size bg-funko-blue flex justify-center items-center">
+    <app-back-btn class="absolute top-0 left-0" ></app-back-btn>
+    <form action="" class="w-1/2  bg-white custom-card-shadow  rounded-2xl p-6 flex flex-col gap-1 max-tablet:w-[80%]  " >
+        <h1 class="font-bold text-slate-700  w-full h-auto ">Registrate</h1>
+        <div class="flex w-full gap-5 max-tablet:flex-col max-tablet:gap-0 ">
+            <div class="w-full h-[100%] ">
+                <div class="flex flex-col">
+                    <label for="name" class="mr-6 my-2 text-slate-700 " >Nombres</label>
+                    <input type="text" name="" id="name" class="px-3 py-1 border border-gray-400 rounded focus:outline-none focus:ring-1 focus:funko-blue focus:border-transparent " placeholder="Ingresa tus nombres" tabindex="1" >
+                </div>
+                <div class="flex flex-col">
+                    <label for="user" class="mr-6 my-2 text-slate-700 " >Usuario</label>
+                    <input type="text" name="" id="user" class="px-3 py-1 border border-gray-400 rounded focus:outline-none focus:ring-1 focus:funko-blue focus:border-transparent " placeholder="Ingresa tu nombre de usuario" tabindex="3" >
+                </div>
+                <div class="flex flex-col">
+                    <label for="password" class="mr-6 my-2 text-slate-700 " >Contraseña</label>
+                    <input type="password" name="" id="password" class="px-3 py-1 border border-gray-400 rounded focus:outline-none focus:ring-1 focus:funko-blue focus:border-transparent " placeholder="Ingresa tu contraseña" tabindex="5" >
+                </div>  
+            </div>
+            <div class="w-full h-[100%] ">
+                <div class="flex flex-col">
+                    <label for="email" class="mr-6 my-2 text-slate-700 " >Apellido</label>
+                    <input type="text" name="" id="email" class="px-3 py-1 border border-gray-400 rounded focus:outline-none focus:ring-1 focus:funko-blue focus:border-transparent " placeholder="Ingresa tu apellido" tabindex="2"  >
+                </div>
+                <div class="flex flex-col">
+                    <label for="userName" class="mr-6 my-2 text-slate-700 " >Correo</label>
+                    <input type="text" name="" id="userName" class="px-3 py-1 border border-gray-400 rounded focus:outline-none focus:ring-1 focus:funko-blue focus:border-transparent " placeholder="Ingresa tu correo" tabindex="4"  >
+                </div>
+                <div class="flex flex-col">
+                    <label for="email" class="mr-6 my-2 text-slate-700 " >Confirmar contraseña</label>
+                    <input type="text" name="" id="email" class="px-3 py-1 border border-gray-400 rounded focus:outline-none focus:ring-1 focus:funko-blue focus:border-transparent " placeholder="Ingresa tu contraseña" tabindex="6"  >
+                </div> 
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <button class="bg-funko-blue rounded p-2 mt-3 text-white hover:bg-white hover:text-funko-blue transition-colors duration-300 " routerLink="/login" >Registrarse</button>
+          </div>
+    </form>
+</div>
